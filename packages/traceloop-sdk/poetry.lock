@@ -1910,7 +1910,7 @@ url = "../opentelemetry-instrumentation-milvus"
 name = "opentelemetry-instrumentation-mistralai"
 version = "0.40.12"
 description = "OpenTelemetry Mistral AI instrumentation"
-optional = false
+optional = true
 python-versions = ">=3.9,<4"
 groups = ["main"]
 markers = "extra == \"mistralai\" or extra == \"all\""
@@ -3665,4 +3665,4 @@ weaviate = ["opentelemetry-instrumentation-weaviate"]
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.10,<4"
-content-hash = "b888d3d8f9ae81de006e404b93ef4d0965118f2676c5b9a25c32dffbd8d9e394"
+content-hash = "d6fe32c66b01084224eefbb31cf113fd3003507694ce2f16bd64ac150cf79ae5"
