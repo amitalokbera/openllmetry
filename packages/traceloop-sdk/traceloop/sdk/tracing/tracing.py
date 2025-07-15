@@ -513,7 +513,7 @@ def init_openai_instrumentor(
             if not instrumentor.is_instrumented_by_opentelemetry:
                 instrumentor.instrument()
         elif is_package_installed("openai"):
-            logging.warning(
+            logging.info(
                 "OpenAI SDK is installed but opentelemetry-instrumentation-openai is not. "
                 "Install traceloop-sdk with the 'openai' extra: pip install 'traceloop-sdk[openai]'"
             )
@@ -544,7 +544,7 @@ def init_anthropic_instrumentor(
             if not instrumentor.is_instrumented_by_opentelemetry:
                 instrumentor.instrument()
         elif is_package_installed("anthropic"):
-            logging.warning(
+            logging.info(
                 "Anthropic SDK is installed but opentelemetry-instrumentation-anthropic is not. "
                 "Install traceloop-sdk with the 'anthropic' extra: pip install 'traceloop-sdk[anthropic]'"
             )
@@ -569,7 +569,7 @@ def init_cohere_instrumentor():
             if not instrumentor.is_instrumented_by_opentelemetry:
                 instrumentor.instrument()
         elif is_package_installed("cohere"):
-            logging.warning(
+            logging.info(
                 "Cohere SDK is installed but opentelemetry-instrumentation-cohere is not. "
                 "Install traceloop-sdk with the 'cohere' extra: pip install 'traceloop-sdk[cohere]'"
             )
@@ -594,7 +594,7 @@ def init_pinecone_instrumentor():
             if not instrumentor.is_instrumented_by_opentelemetry:
                 instrumentor.instrument()
         elif is_package_installed("pinecone"):
-            logging.warning(
+            logging.info(
                 "Pinecone SDK is installed but opentelemetry-instrumentation-pinecone is not. "
                 "Install traceloop-sdk with the 'pinecone' extra: pip install 'traceloop-sdk[pinecone]'"
             )
@@ -619,7 +619,7 @@ def init_qdrant_instrumentor():
             if not instrumentor.is_instrumented_by_opentelemetry:
                 instrumentor.instrument()
         elif is_package_installed("qdrant_client"):
-            logging.warning(
+            logging.info(
                 "Qdrant client is installed but opentelemetry-instrumentation-qdrant is not. "
                 "Install traceloop-sdk with the 'qdrant' extra: pip install 'traceloop-sdk[qdrant]'"
             )
@@ -644,7 +644,7 @@ def init_chroma_instrumentor():
             if not instrumentor.is_instrumented_by_opentelemetry:
                 instrumentor.instrument()
         elif is_package_installed("chromadb"):
-            logging.warning(
+            logging.info(
                 "ChromaDB is installed but opentelemetry-instrumentation-chromadb is not. "
                 "Install traceloop-sdk with the 'chromadb' extra: pip install 'traceloop-sdk[chromadb]'"
             )
@@ -671,7 +671,7 @@ def init_google_generativeai_instrumentor():
             if not instrumentor.is_instrumented_by_opentelemetry:
                 instrumentor.instrument()
         elif is_package_installed("google-generativeai"):
-            logging.warning(
+            logging.info(
                 "Google GenerativeAI SDK is installed but opentelemetry-instrumentation-google-generativeai is not. "
                 "Install traceloop-sdk with the 'google-generativeai' extra: pip install 'traceloop-sdk[google-generativeai]'"
             )
@@ -696,7 +696,7 @@ def init_haystack_instrumentor():
             if not instrumentor.is_instrumented_by_opentelemetry:
                 instrumentor.instrument()
         elif is_package_installed("haystack"):
-            logging.warning(
+            logging.info(
                 "Haystack is installed but opentelemetry-instrumentation-haystack is not. "
                 "Install traceloop-sdk with the 'haystack' extra: pip install 'traceloop-sdk[haystack]'"
             )
@@ -721,7 +721,7 @@ def init_langchain_instrumentor():
             if not instrumentor.is_instrumented_by_opentelemetry:
                 instrumentor.instrument()
         elif is_package_installed("langchain") or is_package_installed("langgraph"):
-            logging.warning(
+            logging.info(
                 "LangChain/LangGraph is installed but opentelemetry-instrumentation-langchain is not. "
                 "Install traceloop-sdk with the 'langchain' extra: pip install 'traceloop-sdk[langchain]'"
             )
@@ -746,7 +746,7 @@ def init_mistralai_instrumentor():
             if not instrumentor.is_instrumented_by_opentelemetry:
                 instrumentor.instrument()
         elif is_package_installed("mistralai"):
-            logging.warning(
+            logging.info(
                 "MistralAI SDK is installed but opentelemetry-instrumentation-mistralai is not. "
                 "Install traceloop-sdk with the 'mistralai' extra: pip install 'traceloop-sdk[mistralai]'"
             )
@@ -771,7 +771,7 @@ def init_ollama_instrumentor():
             if not instrumentor.is_instrumented_by_opentelemetry:
                 instrumentor.instrument()
         elif is_package_installed("ollama"):
-            logging.warning(
+            logging.info(
                 "Ollama SDK is installed but opentelemetry-instrumentation-ollama is not. "
                 "Install traceloop-sdk with the 'ollama' extra: pip install 'traceloop-sdk[ollama]'"
             )
@@ -798,7 +798,7 @@ def init_transformers_instrumentor():
             if not instrumentor.is_instrumented_by_opentelemetry:
                 instrumentor.instrument()
         elif is_package_installed("transformers"):
-            logging.warning(
+            logging.info(
                 "Transformers is installed but opentelemetry-instrumentation-transformers is not. "
                 "Install traceloop-sdk with the 'transformers' extra: pip install 'traceloop-sdk[transformers]'"
             )
@@ -823,7 +823,7 @@ def init_together_instrumentor():
             if not instrumentor.is_instrumented_by_opentelemetry:
                 instrumentor.instrument()
         elif is_package_installed("together"):
-            logging.warning(
+            logging.info(
                 "Together SDK is installed but opentelemetry-instrumentation-together is not. "
                 "Install traceloop-sdk with the 'together' extra: pip install 'traceloop-sdk[together]'"
             )
@@ -848,7 +848,7 @@ def init_llama_index_instrumentor():
             if not instrumentor.is_instrumented_by_opentelemetry:
                 instrumentor.instrument()
         elif is_package_installed("llama-index") or is_package_installed("llama_index"):
-            logging.warning(
+            logging.info(
                 "LlamaIndex is installed but opentelemetry-instrumentation-llamaindex is not. "
                 "Install traceloop-sdk with the 'llamaindex' extra: pip install 'traceloop-sdk[llamaindex]'"
             )
@@ -873,7 +873,7 @@ def init_milvus_instrumentor():
             if not instrumentor.is_instrumented_by_opentelemetry:
                 instrumentor.instrument()
         elif is_package_installed("pymilvus"):
-            logging.warning(
+            logging.info(
                 "Pymilvus is installed but opentelemetry-instrumentation-milvus is not. "
                 "Install traceloop-sdk with the 'milvus' extra: pip install 'traceloop-sdk[milvus]'"
             )
@@ -943,7 +943,7 @@ def init_bedrock_instrumentor(should_enrich_metrics: bool):
             if not instrumentor.is_instrumented_by_opentelemetry:
                 instrumentor.instrument()
         elif is_package_installed("boto3"):
-            logging.warning(
+            logging.info(
                 "Boto3 is installed but opentelemetry-instrumentation-bedrock is not. "
                 "Install traceloop-sdk with the 'bedrock' extra: pip install 'traceloop-sdk[bedrock]'"
             )
@@ -968,7 +968,7 @@ def init_sagemaker_instrumentor(should_enrich_metrics: bool):
             if not instrumentor.is_instrumented_by_opentelemetry:
                 instrumentor.instrument()
         elif is_package_installed("boto3"):
-            logging.warning(
+            logging.info(
                 "SageMaker (boto3) is installed but opentelemetry-instrumentation-sagemaker is not. "
                 "Install traceloop-sdk with the 'sagemaker' extra: pip install 'traceloop-sdk[sagemaker]'"
             )
@@ -993,7 +993,7 @@ def init_replicate_instrumentor():
             if not instrumentor.is_instrumented_by_opentelemetry:
                 instrumentor.instrument()
         elif is_package_installed("replicate"):
-            logging.warning(
+            logging.info(
                 "Replicate SDK is installed but opentelemetry-instrumentation-replicate is not. "
                 "Install traceloop-sdk with the 'replicate' extra: pip install 'traceloop-sdk[replicate]'"
             )
@@ -1018,7 +1018,7 @@ def init_vertexai_instrumentor():
             if not instrumentor.is_instrumented_by_opentelemetry:
                 instrumentor.instrument()
         elif is_package_installed("google-cloud-aiplatform"):
-            logging.warning(
+            logging.info(
                 "Google Cloud AI Platform is installed but opentelemetry-instrumentation-vertexai is not. "
                 "Install traceloop-sdk with the 'vertexai' extra: pip install 'traceloop-sdk[vertexai]'"
             )
@@ -1047,7 +1047,7 @@ def init_watsonx_instrumentor():
         elif is_package_installed("ibm-watsonx-ai") or is_package_installed(
             "ibm_watson_machine_learning"
         ):
-            logging.warning(
+            logging.info(
                 "IBM WatsonX SDK is installed but opentelemetry-instrumentation-watsonx is not. "
                 "Install traceloop-sdk with the 'watsonx' extra: pip install 'traceloop-sdk[watsonx]'"
             )
@@ -1072,7 +1072,7 @@ def init_weaviate_instrumentor():
             if not instrumentor.is_instrumented_by_opentelemetry:
                 instrumentor.instrument()
         elif is_package_installed("weaviate"):
-            logging.warning(
+            logging.info(
                 "Weaviate SDK is installed but opentelemetry-instrumentation-weaviate is not. "
                 "Install traceloop-sdk with the 'weaviate' extra: pip install 'traceloop-sdk[weaviate]'"
             )
@@ -1097,7 +1097,7 @@ def init_alephalpha_instrumentor():
             if not instrumentor.is_instrumented_by_opentelemetry:
                 instrumentor.instrument()
         elif is_package_installed("aleph_alpha_client"):
-            logging.warning(
+            logging.info(
                 "Aleph Alpha client is installed but opentelemetry-instrumentation-alephalpha is not. "
                 "Install traceloop-sdk with the 'alephalpha' extra: pip install 'traceloop-sdk[alephalpha]'"
             )
@@ -1122,7 +1122,7 @@ def init_marqo_instrumentor():
             if not instrumentor.is_instrumented_by_opentelemetry:
                 instrumentor.instrument()
         elif is_package_installed("marqo"):
-            logging.warning(
+            logging.info(
                 "Marqo SDK is installed but opentelemetry-instrumentation-marqo is not. "
                 "Install traceloop-sdk with the 'marqo' extra: pip install 'traceloop-sdk[marqo]'"
             )
@@ -1147,7 +1147,7 @@ def init_lancedb_instrumentor():
             if not instrumentor.is_instrumented_by_opentelemetry:
                 instrumentor.instrument()
         elif is_package_installed("lancedb"):
-            logging.warning(
+            logging.info(
                 "LanceDB is installed but opentelemetry-instrumentation-lancedb is not. "
                 "Install traceloop-sdk with the 'lancedb' extra: pip install 'traceloop-sdk[lancedb]'"
             )
@@ -1185,7 +1185,7 @@ def init_groq_instrumentor():
             if not instrumentor.is_instrumented_by_opentelemetry:
                 instrumentor.instrument()
         elif is_package_installed("groq"):
-            logging.warning(
+            logging.info(
                 "Groq SDK is installed but opentelemetry-instrumentation-groq is not. "
                 "Install traceloop-sdk with the 'groq' extra: pip install 'traceloop-sdk[groq]'"
             )
@@ -1210,7 +1210,7 @@ def init_crewai_instrumentor():
             if not instrumentor.is_instrumented_by_opentelemetry:
                 instrumentor.instrument()
         elif is_package_installed("crewai"):
-            logging.warning(
+            logging.info(
                 "CrewAI SDK is installed but opentelemetry-instrumentation-crewai is not. "
                 "Install traceloop-sdk with the 'crewai' extra: pip install 'traceloop-sdk[crewai]'"
             )
@@ -1235,7 +1235,7 @@ def init_mcp_instrumentor():
             if not instrumentor.is_instrumented_by_opentelemetry:
                 instrumentor.instrument()
         elif is_package_installed("mcp"):
-            logging.warning(
+            logging.info(
                 "MCP SDK is installed but opentelemetry-instrumentation-mcp is not. "
                 "Install traceloop-sdk with the 'mcp' extra: pip install 'traceloop-sdk[mcp]'"
             )
